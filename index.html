@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+body {
+            font-style: oblique;
+        }
+        .normal {
+            font-style: normal;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .oblique {
+            font-style: oblique;
+        }
+        .inherit {
+            font-style: inherit;
+        }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>introduce oneself </h1>
+  <img border="0" src="images/111.jpg" alt="Pulpit rock" width="304" height="420">
+</div>
+
+<div class="topnav">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Personal expertise</h2>
+    <p class="italic"> The knowledge structure of management theory is abundant and can be fully and successfully applied in practice. The basic knowledge of English is relatively solid, with certain listening, speaking, reading, writing, and translation skills; Familiar with computer networks, proficient in office automation, and rich practical experience in installing various hardware and using various software.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Educational experience</h2>
+    <p class="italic">Primary School: New Era Primary School
+Junior High School: New Era Middle School
+High School: New Era High School</p>
+  </div>
+  
+  <div class="column">
+    <h2>appraise</h2>
+    <p class="italic">I am outgoing, stable, energetic, and enthusiastic and sincere towards others. Work conscientiously and responsibly, be proactive, and be able to endure hardships and fragrance. Have a reasonable organizational ability, hands-on ability, and team spirit, and can quickly adapt to various environments and integrate them.</p>
+  </div>
+</div>
+<table border="1"><!--This is table-->
+    <tr>
+      <td>interest</td>
+      <td>go for a travel</td>
+      <td>watch movie</td>
+      <td>sleep late</td>
+    </tr>
+    <tr>
+      <td>achievement</td>
+      <td>Tsinghua University dropout</td>
+      <td>Peking University dropout</td>
+      <td>Best Lazy Man Award</td>
+    </tr>
+    <tr>
+        <td>Places visited</td>
+        <td>Yunnan</td>
+        <td>Xizang</td>
+        <td>Guilin</td>
+      </tr>
+      <tr>
+        <td>My favorite Chinese food</td>
+        <td>dumpling</td>
+        <td>moon cake</td>
+        <td>Tea egg</td>
+      </tr>
+    </table>
+</body>
+</html>
